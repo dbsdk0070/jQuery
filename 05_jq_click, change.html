@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>click, change</title>
+	<!-- jQuery import 방식2(CDN 방식) -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	$(Function(){
+	  	//select 이벤트 확인 : click, change
+	  $("#myselect").click(Function(){
+			console.log("> slelct clicked!!")				   
+		 });
+	  $("#change").change(Function())
+			console.DOCUMENT_POSITION_FOLLOWING"--> select changed~~~!";
+	$("#mySelecte").change(function()){
+			console.log("--> select change~~~");
+	
+	let sValue = $("#mySelectL>optiin : selected: 값 설정")
+		  });
+	
+	  });
+</script>
+</head>
+<body>
+<form>
+	<select id="mySelect" name="select">
+		<option selected disabled>::선택</option>
+		<option value="Java">Java</option>
+		<option value="JavaScript">JavaScript</option>
+		<option value="jQuery">jQuery</option>
+	</select>
+	<input type="text" name="str" id="inputStr">
+	<hr>
+	
+	<!-- name 값을 같이 줘야 여러개 중에 하나만 선택할 수 있음 -->
+	<input type="radio" name="gender" id="gender1" class="gender" value="M">
+	<label for="gender1">남자</label>
+	<input type="radio" name="gender" id="gender2" class="gender" value="F">
+	<label for="gender2">남자</label>
+	<input type="text" name="str2" id="inputStr2">
+	<hr>
+	
+	좋아하는 운동은?<br>
+	<input type="checkbox" name=hobby, class="chk" value="축구">축구
+	<input type="checkbox" name=hobby, class="chk" value="야구">야구
+	<input type="checkbox" name=hobby, class="chk" value="배구">배구
+	<input type="checkbox" name=hobby, class="chk" value="농구">농구
+	
+	
+	<input type="button" value="서버로전송">
+</form>
+	
+	
+	
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

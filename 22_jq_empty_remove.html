@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>empty, remove</title>
+    <!-- jQuery import 방식2(CDN 방식) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function(){
+        $("#empty").click(function(){
+            $("#myDiv").empty();
+            //$("#myDiv").html("");
+        });
+        $("#remove").click(function(){
+            $("#myDiv").remove();
+        });
+        
+        // append() : 기준(선택)태그에 자녀 태그추가
+        $("#append").click(function(){
+            $("#myDiv").append("<p>append 버튼으로 추가</p>");
+        });
+        // html() : 기준(선택) 태그내의 html 요소 읽기, 쓰기
+        $("#html").click(function(){
+            console.log($("#myDiv").html());
+            var htmlTag = $("#myDiv").html();
+            $("#myDiv").html(htmlTag + "<p>html() 사용 추가</p>"); //append()
+            
+        });
+    });
+</script>
+<style>
+    #myDiv { border: 2px solid blue; height: 200px; }
+    p { background-color: yellow; }
+</style>
+</head>
+<body>
+    <button id="empty">초기화(empty)</button>
+    <button id="remove">삭제(remove)</button>
+    
+    <button id="append">추가(append)</button>
+    <button id="html">수정(html)</button>
+    <hr>
+    <div id="myDiv">
+        <p>Java</p>
+        <p>HTML</p>
+        <p>CSS</p>
+    </div>
+    <hr>
+    <h2>div 다음에 있는 h2태그</h2>
+   
+    
+    
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
